@@ -1,0 +1,116 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+Octal Flash Mode Enabled
+For OPI Flash, Use Default Flash Boot Mode
+mode:SLOW_RD, clock div:1
+load:0x3fce2810,len:0x1874
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd40
+load:0x403cb700,len:0x2efc
+entry 0x403c892c
+[0;32mI (33) boot: ESP-IDF v5.4-dev-2744-g59e1838270-dirty 2nd stage bootloader[0m
+[0;32mI (33) boot: compile time Mar 31 2025 14:38:10[0m
+[0;32mI (34) boot: Multicore bootloader[0m
+[0;32mI (38) boot: chip revision: v0.1[0m
+[0;32mI (42) boot: efuse block revision: v1.2[0m
+[0;32mI (47) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (52) boot.esp32s3: SPI Mode       : SLOW READ[0m
+[0;32mI (57) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (62) boot: Enabling RNG early entropy source...[0m
+[0;32mI (67) boot: Partition Table:[0m
+[0;32mI (71) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (78) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (85) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (93) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (100) boot: End of partition table[0m
+[0;32mI (105) esp_image: segment 0: paddr=00010020 vaddr=3c0b0020 size=2725ch (160348) map[0m
+[0;32mI (151) esp_image: segment 1: paddr=00037284 vaddr=3fc9ab00 size=04f8ch ( 20364) load[0m
+[0;32mI (156) esp_image: segment 2: paddr=0003c218 vaddr=40374000 size=03e00h ( 15872) load[0m
+[0;32mI (161) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=a7890h (686224) map[0m
+[0;32mI (326) esp_image: segment 4: paddr=000e78b8 vaddr=40377e00 size=12c24h ( 76836) load[0m
+[0;32mI (356) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (357) boot: Disabling RNG early entropy source...[0m
+[0;32mI (369) cpu_start: Multicore app[0m
+[0;32mI (378) cpu_start: Pro cpu start user code[0m
+[0;32mI (378) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (378) app_init: Application information:[0m
+[0;32mI (381) app_init: Project name:     HTTP_ECHO_SERVER[0m
+[0;32mI (386) app_init: App version:      1[0m
+[0;32mI (391) app_init: Compile time:     Mar 31 2025 14:37:44[0m
+[0;32mI (397) app_init: ELF file SHA256:  c8e69d6f2...[0m
+[0;32mI (402) app_init: ESP-IDF:          v5.4-dev-2744-g59e1838270-dirty[0m
+[0;32mI (409) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (414) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (419) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (423) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (431) heap_init: At 3FCA3EC0 len 00045850 (278 KiB): RAM[0m
+[0;32mI (437) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (443) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (449) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;33mW (456) spi_flash: Octal flash chip is using but dio mode is selected, will automatically switch to Octal mode[0m
+[0;32mI (466) spi_flash: detected chip: mxic (opi)[0m
+[0;32mI (471) spi_flash: flash io: opi_str[0m
+[0;33mW (475) spi_flash: Detected size(32768k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (489) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (496) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (503) coexist: coex firmware version: 2edab05f2[0m
+[0;32mI (509) coexist: coexist rom version e7ae62f[0m
+[0;32mI (514) main_task: Started on CPU0[0m
+[0;32mI (524) main_task: Calling app_main()[0m
+[0;32mI (544) pp: pp rom version: e7ae62f[0m
+[0;32mI (544) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (554) wifi:wifi driver task: 3fcae2c8, prio:23, stack:6656, core=0[0m
+[0;32mI (554) wifi:wifi firmware version: df2deb7[0m
+[0;32mI (554) wifi:wifi certification version: v7.0[0m
+[0;32mI (554) wifi:config NVS flash: enabled[0m
+[0;32mI (564) wifi:config nano formatting: disabled[0m
+[0;32mI (564) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (564) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (574) wifi:Init management short buffer num: 32[0m
+[0;32mI (574) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (584) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (584) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (584) wifi:Init static rx buffer num: 10[0m
+[0;32mI (594) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (594) wifi_init: rx ba win: 6[0m
+[0;32mI (604) wifi_init: accept mbox: 6[0m
+[0;32mI (604) wifi_init: tcpip mbox: 32[0m
+[0;32mI (604) wifi_init: udp mbox: 6[0m
+[0;32mI (614) wifi_init: tcp mbox: 6[0m
+[0;32mI (614) wifi_init: tcp tx win: 5760[0m
+[0;32mI (624) wifi_init: tcp rx win: 5760[0m
+[0;32mI (624) wifi_init: tcp mss: 1440[0m
+[0;32mI (624) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (634) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (634) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (644) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;32mI (694) wifi:mod��[0;32mI (694) main_task: Returned from app_main()[0m[0m
+[0;32mI (694) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (694) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (734) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (744) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (764) wifi:connected with ABCD, aid = 5, channel 1, BW20, bssid = 62:13:89:73:ef:ee[0m
+[0;32mI (764) wifi:security: WPA2-PSK, phy: bgn, rssi: -47[0m
+[0;32mI (764) wifi:pm start, type: 1[0m
+
+[0;32mI (764) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (774) wifi:set rx beacon pti, rx_bcn_pti: 14, bcn_timeout: 25000, mt_pti: 14, mt_time: 10000[0m
+[0;32mI (784) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (794) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1794) esp_netif_handlers: sta ip: 192.168.27.97, mask: 255.255.255.0, gw: 192.168.27.149[0m
+[0;32mI (1794) http_client: Connected to Wi-Fi[0m
+[0;32mI (4514) http_client: Received UART Data: we[0m
+[0;32mI (4514) http_client: Sending HTTP request...[0m
+[0;32mI (4644) wifi:<ba-add>idx:0 (ifx:0, 62:13:89:73:ef:ee), tid:0, ssn:4, winSize:64[0m
+[0;32mI (6604) http_client: {"reply":"It seems like you started to say something, but it got cut off. Could you please complete your thought or ask a question? I'm here to help."}[0m
+[0;32mI (6614) http_client: HTTP POST Status = 200[0m
+[0;32mI (7944) http_client: Received UART Data: ather of [0m
+[0;32mI (7944) http_client: Sending HTTP request...[0m
+[0;32mI (9904) http_client: {"reply":"I think you meant to type \"father of\"?"}[0m
+[0;32mI (9904) http_client: HTTP POST Status = 200[0m
+[0;32mI (10914) http_client: Received UART Data: surat[0m
+[0;32mI (10914) http_client: Sending HTTP request...[0m
+[0;32mI (12154) http_client: {"reply":"Surat!\n\nSurat is a city located in the state of Gujarat, India. It is the second-largest city in the state and is known for its rich cultural heritage, vibrant markets, and delicious cuisine. Here are some interesting facts and attractions about Surat:\n\n**Histar destination for tourists and business travelers alike."}[0m
+[0;32mI (12184) http_client: HTTP POST Status = 200[0m

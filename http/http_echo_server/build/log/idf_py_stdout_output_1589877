@@ -1,0 +1,88 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cd "/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/http/http_echo_server/build/bootloader/esp-idf/esptool_py" && /home/dnk120/.espressif/python_env/idf5.4_py3.10_env/bin/python /home/dnk120/esp/esp-idf-release-v5.3/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/dnk120/Desktop/milan/trainning/esp32/esp\ trainning/http/http_echo_server/build/bootloader/bootloader.bin
+Bootloader binary size 0x5510 bytes. 0x2af0 bytes (34%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/http/http_echo_server/main/main.c: In function 'echo_post_handler':
+/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/http/http_echo_server/main/main.c:78:5: warning: pointer 'content' used after 'free' [-Wuse-after-free]
+   78 |     handle_incoming_json(content, ret);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/http/http_echo_server/main/main.c:76:5: note: call to 'free' here
+   76 |     free(content); // Free allocated memory after use
+      |     ^~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable HTTP_ECHO_SERVER.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/dnk120/Desktop/milan/trainning/esp32/esp trainning/http/http_echo_server/build/HTTP_ECHO_SERVER.bin
+[7/8] cd "/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/http/http_echo_server/build/esp-idf/esptool_py" && /home/dnk120/.espressif/python_env/idf5.4_py3.10_env/bin/python /home/dnk120/esp/esp-idf-release-v5.3/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/dnk120/Desktop/milan/trainning/esp32/esp\ trainning/http/http_echo_server/build/partition_table/partition-table.bin /home/dnk120/Desktop/milan/trainning/esp32/esp\ trainning/http/http_echo_server/build/HTTP_ECHO_SERVER.bin
+HTTP_ECHO_SERVER.bin binary size 0xcd380 bytes. Smallest app partition is 0x100000 bytes. 0x32c80 bytes (20%) free.
+[7/8] cd /home/dnk120/esp/esp-idf-release-v5.3/components/esptool_py && /home/dnk120/.espressif/tools/cmake/3.24.0/bin/cmake -D IDF_PATH=/home/dnk120/esp/esp-idf-release-v5.3 -D "SERIAL_TOOL=/home/dnk120/.espressif/python_env/idf5.4_py3.10_env/bin/python;;/home/dnk120/esp/esp-idf-release-v5.3/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D "WORKING_DIRECTORY=/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/http/http_echo_server/build" -P /home/dnk120/esp/esp-idf-release-v5.3/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 HTTP_ECHO_SERVER.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/ttyUSB0
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.1)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_1v8)
+Crystal is 40MHz
+MAC: 68:b6:b3:3e:16:3c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000ddfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21776 bytes to 13446...
+Writing at 0x00000000... (100 %)
+Wrote 21776 bytes (13446 compressed) at 0x00000000 in 0.6 seconds (effective 286.7 kbit/s)...
+Hash of data verified.
+Compressed 840576 bytes to 524742...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001d0f4... (6 %)
+Writing at 0x000259c6... (9 %)
+Writing at 0x0002a690... (12 %)
+Writing at 0x0003455b... (15 %)
+Writing at 0x0003c8a9... (18 %)
+Writing at 0x00042b97... (21 %)
+Writing at 0x00048f3b... (24 %)
+Writing at 0x0004f832... (27 %)
+Writing at 0x00055773... (30 %)
+Writing at 0x0005b69e... (33 %)
+Writing at 0x00061337... (36 %)
+Writing at 0x000676c1... (39 %)
+Writing at 0x0006c51f... (42 %)
+Writing at 0x00071753... (45 %)
+Writing at 0x0007662c... (48 %)
+Writing at 0x0007ba23... (51 %)
+Writing at 0x00080d5e... (54 %)
+Writing at 0x000863a9... (57 %)
+Writing at 0x0008c122... (60 %)
+Writing at 0x00091996... (63 %)
+Writing at 0x000975b5... (66 %)
+Writing at 0x0009d38f... (69 %)
+Writing at 0x000a2b60... (72 %)
+Writing at 0x000a893c... (75 %)
+Writing at 0x000aeee7... (78 %)
+Writing at 0x000b480b... (81 %)
+Writing at 0x000b9cbb... (84 %)
+Writing at 0x000c3925... (87 %)
+Writing at 0x000cb2f3... (90 %)
+Writing at 0x000d1348... (93 %)
+Writing at 0x000d78cb... (96 %)
+Writing at 0x000dd151... (100 %)
+Wrote 840576 bytes (524742 compressed) at 0x00010000 in 14.5 seconds (effective 462.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 485.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

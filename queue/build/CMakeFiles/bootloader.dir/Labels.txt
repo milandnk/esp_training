@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/queue/build/CMakeFiles/bootloader
+/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/queue/build/CMakeFiles/bootloader.rule
+/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/queue/build/CMakeFiles/bootloader-complete.rule
+/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/queue/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/queue/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/queue/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/queue/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/queue/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/queue/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/queue/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

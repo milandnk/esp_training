@@ -1,0 +1,21 @@
+{
+    "idf.port": "/dev/ttyUSB0",
+    "idf.adapterTargetName": "esp32s3",
+    "idf.openOcdConfigs": [
+        "interface/ftdi/esp32_devkitj_v1.cfg",
+        "target/esp32s3.cfg"
+    ],
+    "idf.flashType": "UART",
+    "files.associations": {
+        "task.h": "c",
+        "uart.h": "c",
+        "freertos.h": "c",
+        "esp_log.h": "c",
+        "esp_intr_alloc.h": "c",
+        "stdio.h": "c",
+        "stdint.h": "c",
+        "cstdint": "c",
+        "string.h": "c",
+        "queue.h": "c"
+    }
+}

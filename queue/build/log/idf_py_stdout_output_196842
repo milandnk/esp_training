@@ -1,0 +1,1356 @@
+app_main()[0m
+[0;32mI (�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1874
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd40
+load:0x403cb700,len:0x2efc
+entry 0x403c892c
+[0;32mI (27) boot: ESP-IDF v5.4-dev-2744-g59e1838270-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 24 2025 13:14:34[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.2[0m
+[0;32mI (36) boot: efuse block revision: v1.3[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a8f0h ( 43248) map[0m
+[0;32mI (114) esp_image: segment 1: paddr=0001a918 vaddr=3fc92500 size=02a54h ( 10836) load[0m
+[0;32mI (117) esp_image: segment 2: paddr=0001d374 vaddr=40374000 size=02ca4h ( 11428) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b388h (111496) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=0003b3b0 vaddr=40376ca4 size=0b7d0h ( 47056) load[0m
+[0;32mI (167) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (167) boot: Disabling RNG early entropy source...[0m
+[0;32mI (179) cpu_start: Multicore app[0m
+[0;32mI (189) cpu_start: Pro cpu start user code[0m
+[0;32mI (189) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (189) app_init: Application information:[0m
+[0;32mI (192) app_init: Project name:     adc_dma[0m
+[0;32mI (197) app_init: App version:      1[0m
+[0;32mI (201) app_init: Compile time:     Mar 24 2025 13:14:11[0m
+[0;32mI (207) app_init: ELF file SHA256:  bd7556961...[0m
+[0;32mI (213) app_init: ESP-IDF:          v5.4-dev-2744-g59e1838270-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (224) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (229) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (234) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (241) heap_init: At 3FC95810 len 00053F00 (335 KiB): RAM[0m
+[0;32mI (247) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (253) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (267) spi_flash: detected chip: gd[0m
+[0;32mI (270) spi_flash: flash io: dio[0m
+[0;33mW (274) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (287) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (295) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (302) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (322) QueueExample: Sender Task 1 sent: 20[0m
+[0;32mI (322) QueueExample: Sender Task 1 sent: 30[0m
+[0;32mI (332) QueueExample: Sender Task 1 sent: 40[0m
+[0;32mI (332) QueueExample: Sender Task 1 sent: 50[0m
+[0;32mI (342) QueueExample: Created task SenderTask1[0m
+[0;32mI (342) QueueExample: Receiver received: 10[0m
+[0;32mI (352) QueueExample: Created task ReceiverTask[0m
+[0;32mI (352) main_task: Returned from app_main()[0m
+[0;32mI (442) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (442) QueueExample: Sender Task 1 sent: 20[0m
+[0;32mI (442) QueueExample: Sender Task 1 sent: 30[0m
+[0;32mI (442) QueueExample: Sender Task 1 sent: 40[0m
+[0;32mI (442) QueueExample: Sender Task 1 sent: 50[0m
+[0;32mI (452) QueueExample: Receiver received: 20[0m
+[0;32mI (552) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (552) QueueExample: Sender Task 1 sent: 20[0m
+[0;32mI (552) QueueExample: Sender Task 1 sent: 30[0m
+[0;32mI (552) QueueExample: Sender Task 1 sent: 40[0m
+[0;32mI (552) QueueExample: Sender Task 1 sent: 50[0m
+[0;32mI (562) QueueExample: Receiver received: 30[0m
+[0;32mI (662) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (662) QueueExample: Sender Task 1 sent: 20[0m
+[0;32mI (662) QueueExample: Sender Task 1 sent: 30[0m
+[0;32mI (662) QueueExample: Sender Task 1 sent: 40[0m
+[0;32mI (662) QueueExample: Sender Task 1 sent: 50[0m
+[0;32mI (672) QueueExample: Receiver received: 40[0m
+[0;32mI (772) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (772) QueueExample: Sender Task 1 sent: 20[0m
+[0;32mI (772) QueueExample: Sender Task 1 sent: 30[0m
+[0;32mI (772) QueueExample: Sender Task 1 sent: 40[0m
+[0;33mW (872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (872) QueueExample: Receiver received: 50[0m
+[0;32mI (972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (1072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (1172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (1272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (1372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (1372) QueueExample: Receiver received: 10[0m
+[0;32mI (1472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (1572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (1672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (1772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (1872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (1872) QueueExample: Receiver received: 20[0m
+[0;32mI (1972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (2072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (2172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (2272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (2372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (2372) QueueExample: Receiver received: 30[0m
+[0;32mI (2472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (2572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (2672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (2772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (2872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (2872) QueueExample: Receiver received: 40[0m
+[0;32mI (2972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (3072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (3172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (3272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (3372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (3372) QueueExample: Receiver received: 50[0m
+[0;32mI (3472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (3572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (3672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (3772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (3872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (3872) QueueExample: Receiver received: 10[0m
+[0;32mI (3972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (4072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (4172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (4272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (4372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (4372) QueueExample: Receiver received: 20[0m
+[0;32mI (4472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (4572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (4672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (4772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (4872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (4872) QueueExample: Receiver received: 30[0m
+[0;32mI (4972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (5072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (5172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (5272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (5372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (5372) QueueExample: Receiver received: 40[0m
+[0;32mI (5472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (5572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (5672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (5772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (5872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (5872) QueueExample: Receiver received: 50[0m
+[0;32mI (5972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (6072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (6172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (6272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (6372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (6372) QueueExample: Receiver received: 10[0m
+[0;32mI (6472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (6572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (6672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (6772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (6872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (6872) QueueExample: Receiver received: 20[0m
+[0;32mI (6972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (7072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (7172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (7272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (7372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (7372) QueueExample: Receiver received: 30[0m
+[0;32mI (7472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (7572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (7672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (7772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (7872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (7872) QueueExample: Receiver received: 40[0m
+[0;32mI (7972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (8072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (8172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (8272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (8372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (8372) QueueExample: Receiver received: 50[0m
+[0;32mI (8472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (8572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (8672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (8772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (8872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (8872) QueueExample: Receiver received: 10[0m
+[0;32mI (8972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (9072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (9172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (9272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (9372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (9372) QueueExample: Receiver received: 20[0m
+[0;32mI (9472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (9572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (9672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (9772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (9872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (9872) QueueExample: Receiver received: 30[0m
+[0;32mI (9972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (10072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (10172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (10272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (10372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (10372) QueueExample: Receiver received: 40[0m
+[0;32mI (10472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (10572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (10672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (10772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (10872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (10872) QueueExample: Receiver received: 10[0m
+[0;32mI (10972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (11072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (11172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (11272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (11372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (11372) QueueExample: Receiver received: 10[0m
+[0;32mI (11472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (11572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (11672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (11772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (11872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (11872) QueueExample: Receiver received: 10[0m
+[0;32mI (11972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (12072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (12172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (12272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (12372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (12372) QueueExample: Receiver received: 10[0m
+[0;32mI (12472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (12572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (12672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (12772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (12872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (12872) QueueExample: Receiver received: 10[0m
+[0;32mI (12972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (13072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (13172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (13272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (13372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (13372) QueueExample: Receiver received: 10[0m
+[0;32mI (13472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (13572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (13672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (13772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (13872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (13872) QueueExample: Receiver received: 10[0m
+[0;32mI (13972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (14072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (14172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (14272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (14372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (14372) QueueExample: Receiver received: 10[0m
+[0;32mI (14472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (14572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (14672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (14772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (14872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (14872) QueueExample: Receiver received: 10[0m
+[0;32mI (14972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (15072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (15172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (15272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (15372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (15372) QueueExample: Receiver received: 10[0m
+[0;32mI (15472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (15572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (15672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (15772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (15872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (15872) QueueExample: Receiver received: 10[0m
+[0;32mI (15972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (16072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (16172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (16272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (16372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (16372) QueueExample: Receiver received: 10[0m
+[0;32mI (16472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (16572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (16672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (16772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (16872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (16872) QueueExample: Receiver received: 10[0m
+[0;32mI (16972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (17072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (17172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (17272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (17372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (17372) QueueExample: Receiver received: 10[0m
+[0;32mI (17472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (17572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (17672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (17772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (17872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (17872) QueueExample: Receiver received: 10[0m
+[0;32mI (17972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (18072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (18172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (18272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (18372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (18372) QueueExample: Receiver received: 10[0m
+[0;32mI (18472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (18572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (18672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (18772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (18872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (18872) QueueExample: Receiver received: 10[0m
+[0;32mI (18972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (19072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (19172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (19272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (19372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (19372) QueueExample: Receiver received: 10[0m
+[0;32mI (19472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (19572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (19672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (19772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (19872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (19872) QueueExample: Receiver received: 10[0m
+[0;32mI (19972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (20072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (20172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (20272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (20372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (20372) QueueExample: Receiver received: 10[0m
+[0;32mI (20472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (20572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (20672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (20772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (20872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (20872) QueueExample: Receiver received: 10[0m
+[0;32mI (20972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (21072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (21172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (21272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (21372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (21372) QueueExample: Receiver received: 10[0m
+[0;32mI (21472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (21572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (21672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (21772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (21872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (21872) QueueExample: Receiver received: 10[0m
+[0;32mI (21972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (22072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (22172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (22272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (22372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (22372) QueueExample: Receiver received: 10[0m
+[0;32mI (22472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (22572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (22672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (22772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (22872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (22872) QueueExample: Receiver received: 10[0m
+[0;32mI (22972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (23072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (23172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (23272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (23372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (23372) QueueExample: Receiver received: 10[0m
+[0;32mI (23472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (23572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (23672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (23772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (23872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (23872) QueueExample: Receiver received: 10[0m
+[0;32mI (23972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (24072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (24172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (24272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (24372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (24372) QueueExample: Receiver received: 10[0m
+[0;32mI (24472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (24572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (24672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (24772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (24872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (24872) QueueExample: Receiver received: 10[0m
+[0;32mI (24972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (25072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (25172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (25272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (25372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (25372) QueueExample: Receiver received: 10[0m
+[0;32mI (25472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (25572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (25672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (25772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (25872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (25872) QueueExample: Receiver received: 10[0m
+[0;32mI (25972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (26072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (26172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (26272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (26372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (26372) QueueExample: Receiver received: 10[0m
+[0;32mI (26472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (26572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (26672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (26772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (26872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (26872) QueueExample: Receiver received: 10[0m
+[0;32mI (26972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (27072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (27172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (27272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (27372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (27372) QueueExample: Receiver received: 10[0m
+[0;32mI (27472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (27572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (27672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (27772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (27872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (27872) QueueExample: Receiver received: 10[0m
+[0;32mI (27972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (28072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (28172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (28272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (28372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (28372) QueueExample: Receiver received: 10[0m
+[0;32mI (28472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (28572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (28672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (28772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (28872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (28872) QueueExample: Receiver received: 10[0m
+[0;32mI (28972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (29072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (29172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (29272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (29372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (29372) QueueExample: Receiver received: 10[0m
+[0;32mI (29472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (29572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (29672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (29772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (29872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (29872) QueueExample: Receiver received: 10[0m
+[0;32mI (29972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (30072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (30172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (30272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (30372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (30372) QueueExample: Receiver received: 10[0m
+[0;32mI (30472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (30572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (30672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (30772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (30872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (30872) QueueExample: Receiver received: 10[0m
+[0;32mI (30972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (31072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (31172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (31272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (31372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (31372) QueueExample: Receiver received: 10[0m
+[0;32mI (31472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (31572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (31672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (31772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (31872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (31872) QueueExample: Receiver received: 10[0m
+[0;32mI (31972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (32072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (32172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (32272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (32372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (32372) QueueExample: Receiver received: 10[0m
+[0;32mI (32472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (32572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (32672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (32772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (32872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (32872) QueueExample: Receiver received: 10[0m
+[0;32mI (32972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (33072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (33172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (33272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (33372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (33372) QueueExample: Receiver received: 10[0m
+[0;32mI (33472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (33572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (33672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (33772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (33872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (33872) QueueExample: Receiver received: 10[0m
+[0;32mI (33972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (34072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (34172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (34272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (34372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (34372) QueueExample: Receiver received: 10[0m
+[0;32mI (34472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (34572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (34672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (34772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (34872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (34872) QueueExample: Receiver received: 10[0m
+[0;32mI (34972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (35072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (35172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (35272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (35372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (35372) QueueExample: Receiver received: 10[0m
+[0;32mI (35472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (35572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (35672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (35772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (35872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (35872) QueueExample: Receiver received: 10[0m
+[0;32mI (35972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (36072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (36172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (36272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (36372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (36372) QueueExample: Receiver received: 10[0m
+[0;32mI (36472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (36572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (36672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (36772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (36872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (36872) QueueExample: Receiver received: 10[0m
+[0;32mI (36972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (37072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (37172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (37272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (37372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (37372) QueueExample: Receiver received: 10[0m
+[0;32mI (37472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (37572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (37672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (37772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (37872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (37872) QueueExample: Receiver received: 10[0m
+[0;32mI (37972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (38072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (38172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (38272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (38372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (38372) QueueExample: Receiver received: 10[0m
+[0;32mI (38472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (38572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (38672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (38772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (38872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (38872) QueueExample: Receiver received: 10[0m
+[0;32mI (38972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (39072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (39172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (39272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (39372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (39372) QueueExample: Receiver received: 10[0m
+[0;32mI (39472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (39572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (39672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (39772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (39872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (39872) QueueExample: Receiver received: 10[0m
+[0;32mI (39972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (40072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (40172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (40272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (40372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (40372) QueueExample: Receiver received: 10[0m
+[0;32mI (40472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (40572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (40672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (40772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (40872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (40872) QueueExample: Receiver received: 10[0m
+[0;32mI (40972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (41072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (41172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (41272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (41372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (41372) QueueExample: Receiver received: 10[0m
+[0;32mI (41472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (41572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (41672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (41772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (41872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (41872) QueueExample: Receiver received: 10[0m
+[0;32mI (41972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (42072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (42172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (42272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (42372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (42372) QueueExample: Receiver received: 10[0m
+[0;32mI (42472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (42572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (42672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (42772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (42872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (42872) QueueExample: Receiver received: 10[0m
+[0;32mI (42972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (43072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (43172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (43272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (43372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (43372) QueueExample: Receiver received: 10[0m
+[0;32mI (43472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (43572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (43672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (43772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (43872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (43872) QueueExample: Receiver received: 10[0m
+[0;32mI (43972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (44072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (44172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (44272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (44372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (44372) QueueExample: Receiver received: 10[0m
+[0;32mI (44472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (44572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (44672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (44772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (44872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (44872) QueueExample: Receiver received: 10[0m
+[0;32mI (44972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (45072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (45172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (45272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (45372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (45372) QueueExample: Receiver received: 10[0m
+[0;32mI (45472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (45572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (45672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (45772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (45872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (45872) QueueExample: Receiver received: 10[0m
+[0;32mI (45972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (46072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (46172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (46272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (46372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (46372) QueueExample: Receiver received: 10[0m
+[0;32mI (46472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (46572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (46672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (46772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (46872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (46872) QueueExample: Receiver received: 10[0m
+[0;32mI (46972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (47072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (47172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (47272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (47372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (47372) QueueExample: Receiver received: 10[0m
+[0;32mI (47472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (47572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (47672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (47772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (47872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (47872) QueueExample: Receiver received: 10[0m
+[0;32mI (47972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (48072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (48172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (48272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (48372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (48372) QueueExample: Receiver received: 10[0m
+[0;32mI (48472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (48572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (48672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (48772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (48872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (48872) QueueExample: Receiver received: 10[0m
+[0;32mI (48972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (49072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (49172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (49272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (49372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (49372) QueueExample: Receiver received: 10[0m
+[0;32mI (49472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (49572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (49672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (49772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (49872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (49872) QueueExample: Receiver received: 10[0m
+[0;32mI (49972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (50072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (50172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (50272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (50372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (50372) QueueExample: Receiver received: 10[0m
+[0;32mI (50472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (50572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (50672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (50772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (50872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (50872) QueueExample: Receiver received: 10[0m
+[0;32mI (50972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (51072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (51172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (51272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (51372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (51372) QueueExample: Receiver received: 10[0m
+[0;32mI (51472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (51572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (51672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (51772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (51872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (51872) QueueExample: Receiver received: 10[0m
+[0;32mI (51972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (52072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (52172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (52272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (52372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (52372) QueueExample: Receiver received: 10[0m
+[0;32mI (52472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (52572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (52672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (52772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (52872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (52872) QueueExample: Receiver received: 10[0m
+[0;32mI (52972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (53072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (53172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (53272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (53372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (53372) QueueExample: Receiver received: 10[0m
+[0;32mI (53472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (53572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (53672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (53772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (53872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (53872) QueueExample: Receiver received: 10[0m
+[0;32mI (53972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (54072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (54172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (54272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (54372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (54372) QueueExample: Receiver received: 10[0m
+[0;32mI (54472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (54572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (54672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (54772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (54872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (54872) QueueExample: Receiver received: 10[0m
+[0;32mI (54972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (55072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (55172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (55272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (55372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (55372) QueueExample: Receiver received: 10[0m
+[0;32mI (55472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (55572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (55672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (55772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (55872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (55872) QueueExample: Receiver received: 10[0m
+[0;32mI (55972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (56072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (56172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (56272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (56372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (56372) QueueExample: Receiver received: 10[0m
+[0;32mI (56472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (56572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (56672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (56772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (56872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (56872) QueueExample: Receiver received: 10[0m
+[0;32mI (56972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (57072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (57172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (57272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (57372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (57372) QueueExample: Receiver received: 10[0m
+[0;32mI (57472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (57572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (57672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (57772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (57872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (57872) QueueExample: Receiver received: 10[0m
+[0;32mI (57972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (58072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (58172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (58272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (58372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (58372) QueueExample: Receiver received: 10[0m
+[0;32mI (58472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (58572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (58672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (58772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (58872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (58872) QueueExample: Receiver received: 10[0m
+[0;32mI (58972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (59072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (59172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (59272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (59372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (59372) QueueExample: Receiver received: 10[0m
+[0;32mI (59472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (59572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (59672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (59772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (59872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (59872) QueueExample: Receiver received: 10[0m
+[0;32mI (59972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (60072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (60172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (60272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (60372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (60372) QueueExample: Receiver received: 10[0m
+[0;32mI (60472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (60572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (60672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (60772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (60872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (60872) QueueExample: Receiver received: 10[0m
+[0;32mI (60972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (61072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (61172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (61272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (61372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (61372) QueueExample: Receiver received: 10[0m
+[0;32mI (61472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (61572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (61672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (61772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (61872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (61872) QueueExample: Receiver received: 10[0m
+[0;32mI (61972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (62072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (62172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (62272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (62372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (62372) QueueExample: Receiver received: 10[0m
+[0;32mI (62472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (62572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (62672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (62772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (62872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (62872) QueueExample: Receiver received: 10[0m
+[0;32mI (62972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (63072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (63172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (63272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (63372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (63372) QueueExample: Receiver received: 10[0m
+[0;32mI (63472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (63572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (63672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (63772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (63872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (63872) QueueExample: Receiver received: 10[0m
+[0;32mI (63972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (64072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (64172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (64272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (64372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (64372) QueueExample: Receiver received: 10[0m
+[0;32mI (64472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (64572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (64672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (64772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (64872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (64872) QueueExample: Receiver received: 10[0m
+[0;32mI (64972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (65072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (65172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (65272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (65372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (65372) QueueExample: Receiver received: 10[0m
+[0;32mI (65472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (65572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (65672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (65772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (65872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (65872) QueueExample: Receiver received: 10[0m
+[0;32mI (65972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (66072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (66172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (66272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (66372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (66372) QueueExample: Receiver received: 10[0m
+[0;32mI (66472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (66572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (66672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (66772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (66872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (66872) QueueExample: Receiver received: 10[0m
+[0;32mI (66972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (67072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (67172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (67272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (67372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (67372) QueueExample: Receiver received: 10[0m
+[0;32mI (67472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (67572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (67672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (67772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (67872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (67872) QueueExample: Receiver received: 10[0m
+[0;32mI (67972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (68072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (68172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (68272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (68372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (68372) QueueExample: Receiver received: 10[0m
+[0;32mI (68472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (68572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (68672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (68772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (68872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (68872) QueueExample: Receiver received: 10[0m
+[0;32mI (68972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (69072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (69172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (69272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (69372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (69372) QueueExample: Receiver received: 10[0m
+[0;32mI (69472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (69572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (69672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (69772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (69872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (69872) QueueExample: Receiver received: 10[0m
+[0;32mI (69972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (70072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (70172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (70272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (70372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (70372) QueueExample: Receiver received: 10[0m
+[0;32mI (70472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (70572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (70672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (70772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (70872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (70872) QueueExample: Receiver received: 10[0m
+[0;32mI (70972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (71072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (71172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (71272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (71372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (71372) QueueExample: Receiver received: 10[0m
+[0;32mI (71472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (71572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (71672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (71772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (71872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (71872) QueueExample: Receiver received: 10[0m
+[0;32mI (71972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (72072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (72172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (72272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (72372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (72372) QueueExample: Receiver received: 10[0m
+[0;32mI (72472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (72572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (72672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (72772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (72872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (72872) QueueExample: Receiver received: 10[0m
+[0;32mI (72972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (73072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (73172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (73272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (73372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (73372) QueueExample: Receiver received: 10[0m
+[0;32mI (73472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (73572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (73672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (73772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (73872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (73872) QueueExample: Receiver received: 10[0m
+[0;32mI (73972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (74072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (74172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (74272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (74372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (74372) QueueExample: Receiver received: 10[0m
+[0;32mI (74472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (74572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (74672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (74772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (74872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (74872) QueueExample: Receiver received: 10[0m
+[0;32mI (74972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (75072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (75172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (75272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (75372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (75372) QueueExample: Receiver received: 10[0m
+[0;32mI (75472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (75572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (75672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (75772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (75872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (75872) QueueExample: Receiver received: 10[0m
+[0;32mI (75972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (76072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (76172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (76272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (76372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (76372) QueueExample: Receiver received: 10[0m
+[0;32mI (76472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (76572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (76672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (76772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (76872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (76872) QueueExample: Receiver received: 10[0m
+[0;32mI (76972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (77072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (77172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (77272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (77372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (77372) QueueExample: Receiver received: 10[0m
+[0;32mI (77472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (77572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (77672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (77772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (77872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (77872) QueueExample: Receiver received: 10[0m
+[0;32mI (77972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (78072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (78172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (78272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (78372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (78372) QueueExample: Receiver received: 10[0m
+[0;32mI (78472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (78572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (78672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (78772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (78872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (78872) QueueExample: Receiver received: 10[0m
+[0;32mI (78972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (79072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (79172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (79272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (79372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (79372) QueueExample: Receiver received: 10[0m
+[0;32mI (79472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (79572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (79672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (79772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (79872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (79872) QueueExample: Receiver received: 10[0m
+[0;32mI (79972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (80072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (80172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (80272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (80372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (80372) QueueExample: Receiver received: 10[0m
+[0;32mI (80472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (80572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (80672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (80772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (80872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (80872) QueueExample: Receiver received: 10[0m
+[0;32mI (80972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (81072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (81172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (81272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (81372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (81372) QueueExample: Receiver received: 10[0m
+[0;32mI (81472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (81572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (81672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (81772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (81872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (81872) QueueExample: Receiver received: 10[0m
+[0;32mI (81972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (82072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (82172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (82272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (82372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (82372) QueueExample: Receiver received: 10[0m
+[0;32mI (82472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (82572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (82672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (82772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (82872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (82872) QueueExample: Receiver received: 10[0m
+[0;32mI (82972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (83072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (83172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (83272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (83372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (83372) QueueExample: Receiver received: 10[0m
+[0;32mI (83472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (83572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (83672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (83772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (83872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (83872) QueueExample: Receiver received: 10[0m
+[0;32mI (83972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (84072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (84172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (84272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (84372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (84372) QueueExample: Receiver received: 10[0m
+[0;32mI (84472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (84572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (84672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (84772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (84872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (84872) QueueExample: Receiver received: 10[0m
+[0;32mI (84972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (85072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (85172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (85272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (85372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (85372) QueueExample: Receiver received: 10[0m
+[0;32mI (85472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (85572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (85672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (85772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (85872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (85872) QueueExample: Receiver received: 10[0m
+[0;32mI (85972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (86072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (86172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (86272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (86372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (86372) QueueExample: Receiver received: 10[0m
+[0;32mI (86472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (86572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (86672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (86772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (86872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (86872) QueueExample: Receiver received: 10[0m
+[0;32mI (86972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (87072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (87172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (87272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (87372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (87372) QueueExample: Receiver received: 10[0m
+[0;32mI (87472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (87572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (87672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (87772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (87872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (87872) QueueExample: Receiver received: 10[0m
+[0;32mI (87972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (88072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (88172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (88272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (88372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (88372) QueueExample: Receiver received: 10[0m
+[0;32mI (88472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (88572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (88672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (88772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (88872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (88872) QueueExample: Receiver received: 10[0m
+[0;32mI (88972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (89072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (89172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (89272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (89372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (89372) QueueExample: Receiver received: 10[0m
+[0;32mI (89472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (89572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (89672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (89772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (89872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (89872) QueueExample: Receiver received: 10[0m
+[0;32mI (89972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (90072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (90172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (90272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (90372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (90372) QueueExample: Receiver received: 10[0m
+[0;32mI (90472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (90572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (90672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (90772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (90872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (90872) QueueExample: Receiver received: 10[0m
+[0;32mI (90972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (91072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (91172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (91272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (91372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (91372) QueueExample: Receiver received: 10[0m
+[0;32mI (91472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (91572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (91672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (91772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (91872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (91872) QueueExample: Receiver received: 10[0m
+[0;32mI (91972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (92072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (92172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (92272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (92372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (92372) QueueExample: Receiver received: 10[0m
+[0;32mI (92472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (92572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (92672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (92772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (92872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (92872) QueueExample: Receiver received: 10[0m
+[0;32mI (92972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (93072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (93172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (93272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (93372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (93372) QueueExample: Receiver received: 10[0m
+[0;32mI (93472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (93572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (93672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (93772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (93872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (93872) QueueExample: Receiver received: 10[0m
+[0;32mI (93972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (94072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (94172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (94272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (94372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (94372) QueueExample: Receiver received: 10[0m
+[0;32mI (94472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (94572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (94672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (94772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (94872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (94872) QueueExample: Receiver received: 10[0m
+[0;32mI (94972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (95072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (95172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (95272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (95372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (95372) QueueExample: Receiver received: 10[0m
+[0;32mI (95472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (95572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (95672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (95772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (95872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (95872) QueueExample: Receiver received: 10[0m
+[0;32mI (95972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (96072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (96172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (96272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (96372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (96372) QueueExample: Receiver received: 10[0m
+[0;32mI (96472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (96572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (96672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (96772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (96872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (96872) QueueExample: Receiver received: 10[0m
+[0;32mI (96972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (97072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (97172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (97272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (97372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (97372) QueueExample: Receiver received: 10[0m
+[0;32mI (97472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (97572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (97672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (97772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (97872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (97872) QueueExample: Receiver received: 10[0m
+[0;32mI (97972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (98072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (98172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (98272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (98372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (98372) QueueExample: Receiver received: 10[0m
+[0;32mI (98472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (98572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (98672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (98772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (98872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (98872) QueueExample: Receiver received: 10[0m
+[0;32mI (98972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (99072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (99172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (99272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (99372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (99372) QueueExample: Receiver received: 10[0m
+[0;32mI (99472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (99572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (99672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (99772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (99872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (99872) QueueExample: Receiver received: 10[0m
+[0;32mI (99972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (100072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (100172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (100272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (100372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (100372) QueueExample: Receiver received: 10[0m
+[0;32mI (100472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (100572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (100672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (100772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (100872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (100872) QueueExample: Receiver received: 10[0m
+[0;32mI (100972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (101072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (101172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (101272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (101372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (101372) QueueExample: Receiver received: 10[0m
+[0;32mI (101472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (101572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (101672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (101772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (101872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (101872) QueueExample: Receiver received: 10[0m
+[0;32mI (101972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (102072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (102172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (102272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (102372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (102372) QueueExample: Receiver received: 10[0m
+[0;32mI (102472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (102572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (102672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (102772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (102872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (102872) QueueExample: Receiver received: 10[0m
+[0;32mI (102972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (103072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (103172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (103272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (103372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (103372) QueueExample: Receiver received: 10[0m
+[0;32mI (103472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (103572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (103672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (103772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (103872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (103872) QueueExample: Receiver received: 10[0m
+[0;32mI (103972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (104072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (104172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (104272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (104372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (104372) QueueExample: Receiver received: 10[0m
+[0;32mI (104472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (104572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (104672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (104772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (104872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (104872) QueueExample: Receiver received: 10[0m
+[0;32mI (104972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (105072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (105172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (105272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (105372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (105372) QueueExample: Receiver received: 10[0m
+[0;32mI (105472) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (105572) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (105672) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (105772) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (105872) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (105872) QueueExample: Receiver received: 10[0m
+[0;32mI (105972) QueueExample: Sender Task 1 sent: 10[0m
+[0;33mW (106072) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (106172) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (106272) QueueExample: Sender Task 1 failed to send[0m
+[0;33mW (106372) QueueExample: Sender Task 1 failed to send[0m
+[0;32mI (106372) QueueExample: Receiver received: 10[0m

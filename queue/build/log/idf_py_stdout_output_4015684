@@ -1,0 +1,673 @@
+) sleep_gpio: Configure t�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1874
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd40
+load:0x403cb700,len:0x2efc
+entry 0x403c892c
+[0;32mI (27) boot: ESP-IDF v5.4-dev-2744-g59e1838270-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Mar 24 2025 13:14:34[0m
+[0;32mI (28) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v0.2[0m
+[0;32mI (36) boot: efuse block revision: v1.3[0m
+[0;32mI (40) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (45) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (50) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (55) boot: Enabling RNG early entropy source...[0m
+[0;32mI (60) boot: Partition Table:[0m
+[0;32mI (64) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (71) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (86) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a8e0h ( 43232) map[0m
+[0;32mI (114) esp_image: segment 1: paddr=0001a908 vaddr=3fc92500 size=02a54h ( 10836) load[0m
+[0;32mI (117) esp_image: segment 2: paddr=0001d364 vaddr=40374000 size=02cb4h ( 11444) load[0m
+[0;32mI (125) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b32ch (111404) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=0003b354 vaddr=40376cb4 size=0b7c0h ( 47040) load[0m
+[0;32mI (167) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (167) boot: Disabling RNG early entropy source...[0m
+[0;32mI (179) cpu_start: Multicore app[0m
+[0;32mI (189) cpu_start: Pro cpu start user code[0m
+[0;32mI (189) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (189) app_init: Application information:[0m
+[0;32mI (192) app_init: Project name:     adc_dma[0m
+[0;32mI (197) app_init: App version:      1[0m
+[0;32mI (201) app_init: Compile time:     Mar 24 2025 13:14:11[0m
+[0;32mI (207) app_init: ELF file SHA256:  ef34f9784...[0m
+[0;32mI (212) app_init: ESP-IDF:          v5.4-dev-2744-g59e1838270-dirty[0m
+[0;32mI (219) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (224) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (229) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (234) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (241) heap_init: At 3FC95808 len 00053F08 (335 KiB): RAM[0m
+[0;32mI (247) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (253) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (260) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (267) spi_flash: detected chip: gd[0m
+[0;32mI (270) spi_flash: flash io: dio[0m
+[0;33mW (274) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (287) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (295) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (302) main_task: Started on CPU0[0m
+[0;32mI (322) main_task: Calling app_main()[0m
+[0;32mI (322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (322) QueueExample: Created task SenderTask1[0m
+[0;32mI (322) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (332) QueueExample: Created task SenderTask2[0m
+[0;32mI (332) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (342) QueueExample: Created task SenderTask3[0m
+[0;32mI (342) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (352) QueueExample: Created task SenderTask4[0m
+[0;32mI (352) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (362) QueueExample: Created task SenderTask5[0m
+[0;32mI (362) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (372) QueueExample: Created task SenderTask6[0m
+[0;32mI (372) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (382) QueueExample: Created task SenderTask7[0m
+[0;32mI (382) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (392) QueueExample: Created task SenderTask8[0m
+[0;32mI (392) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (402) QueueExample: Created task SenderTask9[0m
+[0;32mI (402) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (412) QueueExample: Created task SenderTask10[0m
+[0;32mI (412) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (422) QueueExample: Created task SenderTask11[0m
+[0;32mI (432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (432) QueueExample: Created task SenderTask12[0m
+[0;32mI (442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (442) QueueExample: Created task SenderTask13[0m
+[0;32mI (452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (452) QueueExample: Created task SenderTask14[0m
+[0;32mI (462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (462) QueueExample: Created task SenderTask15[0m
+[0;32mI (472) QueueExample: Receiver received: 10[0m
+[0;32mI (472) QueueExample: Created task ReceiverTask[0m
+[0;32mI (482) main_task: Returned from app_main()[0m
+[0;32mI (572) QueueExample: Receiver received: 20[0m
+[0;32mI (672) QueueExample: Receiver received: 30[0m
+[0;32mI (772) QueueExample: Receiver received: 40[0m
+[0;32mI (872) QueueExample: Receiver received: 50[0m
+[0;32mI (972) QueueExample: Receiver received: 60[0m
+[0;32mI (1072) QueueExample: Receiver received: 70[0m
+[0;32mI (1172) QueueExample: Receiver received: 80[0m
+[0;32mI (1272) QueueExample: Receiver received: 90[0m
+[0;32mI (1372) QueueExample: Receiver received: 100[0m
+[0;32mI (1472) QueueExample: Receiver received: 110[0m
+[0;32mI (1572) QueueExample: Receiver received: 120[0m
+[0;32mI (1672) QueueExample: Receiver received: 130[0m
+[0;32mI (1772) QueueExample: Receiver received: 140[0m
+[0;32mI (1872) QueueExample: Receiver received: 150[0m
+[0;32mI (2322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (2322) QueueExample: Receiver received: 10[0m
+[0;32mI (2332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (2342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (2352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (2362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (2372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (2382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (2392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (2402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (2412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (2422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (2422) QueueExample: Receiver received: 20[0m
+[0;32mI (2432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (2442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (2452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (2462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (2522) QueueExample: Receiver received: 30[0m
+[0;32mI (2622) QueueExample: Receiver received: 40[0m
+[0;32mI (2722) QueueExample: Receiver received: 50[0m
+[0;32mI (2822) QueueExample: Receiver received: 60[0m
+[0;32mI (2922) QueueExample: Receiver received: 70[0m
+[0;32mI (3022) QueueExample: Receiver received: 80[0m
+[0;32mI (3122) QueueExample: Receiver received: 90[0m
+[0;32mI (3222) QueueExample: Receiver received: 100[0m
+[0;32mI (3322) QueueExample: Receiver received: 110[0m
+[0;32mI (3422) QueueExample: Receiver received: 120[0m
+[0;32mI (3522) QueueExample: Receiver received: 130[0m
+[0;32mI (3622) QueueExample: Receiver received: 140[0m
+[0;32mI (3722) QueueExample: Receiver received: 150[0m
+[0;32mI (4322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (4322) QueueExample: Receiver received: 10[0m
+[0;32mI (4332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (4342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (4352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (4362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (4372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (4382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (4392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (4402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (4412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (4422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (4422) QueueExample: Receiver received: 20[0m
+[0;32mI (4432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (4442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (4452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (4462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (4522) QueueExample: Receiver received: 30[0m
+[0;32mI (4622) QueueExample: Receiver received: 40[0m
+[0;32mI (4722) QueueExample: Receiver received: 50[0m
+[0;32mI (4822) QueueExample: Receiver received: 60[0m
+[0;32mI (4922) QueueExample: Receiver received: 70[0m
+[0;32mI (5022) QueueExample: Receiver received: 80[0m
+[0;32mI (5122) QueueExample: Receiver received: 90[0m
+[0;32mI (5222) QueueExample: Receiver received: 100[0m
+[0;32mI (5322) QueueExample: Receiver received: 110[0m
+[0;32mI (5422) QueueExample: Receiver received: 120[0m
+[0;32mI (5522) QueueExample: Receiver received: 130[0m
+[0;32mI (5622) QueueExample: Receiver received: 140[0m
+[0;32mI (5722) QueueExample: Receiver received: 150[0m
+[0;32mI (6322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (6322) QueueExample: Receiver received: 10[0m
+[0;32mI (6332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (6342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (6352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (6362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (6372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (6382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (6392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (6402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (6412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (6422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (6422) QueueExample: Receiver received: 20[0m
+[0;32mI (6432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (6442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (6452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (6462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (6522) QueueExample: Receiver received: 30[0m
+[0;32mI (6622) QueueExample: Receiver received: 40[0m
+[0;32mI (6722) QueueExample: Receiver received: 50[0m
+[0;32mI (6822) QueueExample: Receiver received: 60[0m
+[0;32mI (6922) QueueExample: Receiver received: 70[0m
+[0;32mI (7022) QueueExample: Receiver received: 80[0m
+[0;32mI (7122) QueueExample: Receiver received: 90[0m
+[0;32mI (7222) QueueExample: Receiver received: 100[0m
+[0;32mI (7322) QueueExample: Receiver received: 110[0m
+[0;32mI (7422) QueueExample: Receiver received: 120[0m
+[0;32mI (7522) QueueExample: Receiver received: 130[0m
+[0;32mI (7622) QueueExample: Receiver received: 140[0m
+[0;32mI (7722) QueueExample: Receiver received: 150[0m
+[0;32mI (8322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (8322) QueueExample: Receiver received: 10[0m
+[0;32mI (8332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (8342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (8352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (8362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (8372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (8382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (8392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (8402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (8412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (8422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (8422) QueueExample: Receiver received: 20[0m
+[0;32mI (8432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (8442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (8452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (8462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (8522) QueueExample: Receiver received: 30[0m
+[0;32mI (8622) QueueExample: Receiver received: 40[0m
+[0;32mI (8722) QueueExample: Receiver received: 50[0m
+[0;32mI (8822) QueueExample: Receiver received: 60[0m
+[0;32mI (8922) QueueExample: Receiver received: 70[0m
+[0;32mI (9022) QueueExample: Receiver received: 80[0m
+[0;32mI (9122) QueueExample: Receiver received: 90[0m
+[0;32mI (9222) QueueExample: Receiver received: 100[0m
+[0;32mI (9322) QueueExample: Receiver received: 110[0m
+[0;32mI (9422) QueueExample: Receiver received: 120[0m
+[0;32mI (9522) QueueExample: Receiver received: 130[0m
+[0;32mI (9622) QueueExample: Receiver received: 140[0m
+[0;32mI (9722) QueueExample: Receiver received: 150[0m
+[0;32mI (10322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (10322) QueueExample: Receiver received: 10[0m
+[0;32mI (10332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (10342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (10352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (10362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (10372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (10382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (10392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (10402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (10412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (10422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (10422) QueueExample: Receiver received: 20[0m
+[0;32mI (10432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (10442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (10452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (10462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (10522) QueueExample: Receiver received: 30[0m
+[0;32mI (10622) QueueExample: Receiver received: 40[0m
+[0;32mI (10722) QueueExample: Receiver received: 50[0m
+[0;32mI (10822) QueueExample: Receiver received: 60[0m
+[0;32mI (10922) QueueExample: Receiver received: 70[0m
+[0;32mI (11022) QueueExample: Receiver received: 80[0m
+[0;32mI (11122) QueueExample: Receiver received: 90[0m
+[0;32mI (11222) QueueExample: Receiver received: 100[0m
+[0;32mI (11322) QueueExample: Receiver received: 110[0m
+[0;32mI (11422) QueueExample: Receiver received: 120[0m
+[0;32mI (11522) QueueExample: Receiver received: 130[0m
+[0;32mI (11622) QueueExample: Receiver received: 140[0m
+[0;32mI (11722) QueueExample: Receiver received: 150[0m
+[0;32mI (12322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (12322) QueueExample: Receiver received: 10[0m
+[0;32mI (12332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (12342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (12352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (12362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (12372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (12382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (12392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (12402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (12412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (12422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (12422) QueueExample: Receiver received: 20[0m
+[0;32mI (12432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (12442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (12452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (12462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (12522) QueueExample: Receiver received: 30[0m
+[0;32mI (12622) QueueExample: Receiver received: 40[0m
+[0;32mI (12722) QueueExample: Receiver received: 50[0m
+[0;32mI (12822) QueueExample: Receiver received: 60[0m
+[0;32mI (12922) QueueExample: Receiver received: 70[0m
+[0;32mI (13022) QueueExample: Receiver received: 80[0m
+[0;32mI (13122) QueueExample: Receiver received: 90[0m
+[0;32mI (13222) QueueExample: Receiver received: 100[0m
+[0;32mI (13322) QueueExample: Receiver received: 110[0m
+[0;32mI (13422) QueueExample: Receiver received: 120[0m
+[0;32mI (13522) QueueExample: Receiver received: 130[0m
+[0;32mI (13622) QueueExample: Receiver received: 140[0m
+[0;32mI (13722) QueueExample: Receiver received: 150[0m
+[0;32mI (14322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (14322) QueueExample: Receiver received: 10[0m
+[0;32mI (14332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (14342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (14352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (14362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (14372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (14382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (14392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (14402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (14412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (14422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (14422) QueueExample: Receiver received: 20[0m
+[0;32mI (14432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (14442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (14452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (14462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (14522) QueueExample: Receiver received: 30[0m
+[0;32mI (14622) QueueExample: Receiver received: 40[0m
+[0;32mI (14722) QueueExample: Receiver received: 50[0m
+[0;32mI (14822) QueueExample: Receiver received: 60[0m
+[0;32mI (14922) QueueExample: Receiver received: 70[0m
+[0;32mI (15022) QueueExample: Receiver received: 80[0m
+[0;32mI (15122) QueueExample: Receiver received: 90[0m
+[0;32mI (15222) QueueExample: Receiver received: 100[0m
+[0;32mI (15322) QueueExample: Receiver received: 110[0m
+[0;32mI (15422) QueueExample: Receiver received: 120[0m
+[0;32mI (15522) QueueExample: Receiver received: 130[0m
+[0;32mI (15622) QueueExample: Receiver received: 140[0m
+[0;32mI (15722) QueueExample: Receiver received: 150[0m
+[0;32mI (16322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (16322) QueueExample: Receiver received: 10[0m
+[0;32mI (16332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (16342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (16352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (16362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (16372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (16382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (16392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (16402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (16412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (16422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (16422) QueueExample: Receiver received: 20[0m
+[0;32mI (16432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (16442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (16452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (16462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (16522) QueueExample: Receiver received: 30[0m
+[0;32mI (16622) QueueExample: Receiver received: 40[0m
+[0;32mI (16722) QueueExample: Receiver received: 50[0m
+[0;32mI (16822) QueueExample: Receiver received: 60[0m
+[0;32mI (16922) QueueExample: Receiver received: 70[0m
+[0;32mI (17022) QueueExample: Receiver received: 80[0m
+[0;32mI (17122) QueueExample: Receiver received: 90[0m
+[0;32mI (17222) QueueExample: Receiver received: 100[0m
+[0;32mI (17322) QueueExample: Receiver received: 110[0m
+[0;32mI (17422) QueueExample: Receiver received: 120[0m
+[0;32mI (17522) QueueExample: Receiver received: 130[0m
+[0;32mI (17622) QueueExample: Receiver received: 140[0m
+[0;32mI (17722) QueueExample: Receiver received: 150[0m
+[0;32mI (18322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (18322) QueueExample: Receiver received: 10[0m
+[0;32mI (18332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (18342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (18352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (18362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (18372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (18382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (18392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (18402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (18412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (18422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (18422) QueueExample: Receiver received: 20[0m
+[0;32mI (18432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (18442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (18452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (18462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (18522) QueueExample: Receiver received: 30[0m
+[0;32mI (18622) QueueExample: Receiver received: 40[0m
+[0;32mI (18722) QueueExample: Receiver received: 50[0m
+[0;32mI (18822) QueueExample: Receiver received: 60[0m
+[0;32mI (18922) QueueExample: Receiver received: 70[0m
+[0;32mI (19022) QueueExample: Receiver received: 80[0m
+[0;32mI (19122) QueueExample: Receiver received: 90[0m
+[0;32mI (19222) QueueExample: Receiver received: 100[0m
+[0;32mI (19322) QueueExample: Receiver received: 110[0m
+[0;32mI (19422) QueueExample: Receiver received: 120[0m
+[0;32mI (19522) QueueExample: Receiver received: 130[0m
+[0;32mI (19622) QueueExample: Receiver received: 140[0m
+[0;32mI (19722) QueueExample: Receiver received: 150[0m
+[0;32mI (20322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (20322) QueueExample: Receiver received: 10[0m
+[0;32mI (20332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (20342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (20352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (20362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (20372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (20382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (20392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (20402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (20412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (20422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (20422) QueueExample: Receiver received: 20[0m
+[0;32mI (20432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (20442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (20452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (20462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (20522) QueueExample: Receiver received: 30[0m
+[0;32mI (20622) QueueExample: Receiver received: 40[0m
+[0;32mI (20722) QueueExample: Receiver received: 50[0m
+[0;32mI (20822) QueueExample: Receiver received: 60[0m
+[0;32mI (20922) QueueExample: Receiver received: 70[0m
+[0;32mI (21022) QueueExample: Receiver received: 80[0m
+[0;32mI (21122) QueueExample: Receiver received: 90[0m
+[0;32mI (21222) QueueExample: Receiver received: 100[0m
+[0;32mI (21322) QueueExample: Receiver received: 110[0m
+[0;32mI (21422) QueueExample: Receiver received: 120[0m
+[0;32mI (21522) QueueExample: Receiver received: 130[0m
+[0;32mI (21622) QueueExample: Receiver received: 140[0m
+[0;32mI (21722) QueueExample: Receiver received: 150[0m
+[0;32mI (22322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (22322) QueueExample: Receiver received: 10[0m
+[0;32mI (22332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (22342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (22352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (22362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (22372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (22382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (22392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (22402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (22412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (22422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (22422) QueueExample: Receiver received: 20[0m
+[0;32mI (22432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (22442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (22452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (22462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (22522) QueueExample: Receiver received: 30[0m
+[0;32mI (22622) QueueExample: Receiver received: 40[0m
+[0;32mI (22722) QueueExample: Receiver received: 50[0m
+[0;32mI (22822) QueueExample: Receiver received: 60[0m
+[0;32mI (22922) QueueExample: Receiver received: 70[0m
+[0;32mI (23022) QueueExample: Receiver received: 80[0m
+[0;32mI (23122) QueueExample: Receiver received: 90[0m
+[0;32mI (23222) QueueExample: Receiver received: 100[0m
+[0;32mI (23322) QueueExample: Receiver received: 110[0m
+[0;32mI (23422) QueueExample: Receiver received: 120[0m
+[0;32mI (23522) QueueExample: Receiver received: 130[0m
+[0;32mI (23622) QueueExample: Receiver received: 140[0m
+[0;32mI (23722) QueueExample: Receiver received: 150[0m
+[0;32mI (24322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (24322) QueueExample: Receiver received: 10[0m
+[0;32mI (24332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (24342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (24352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (24362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (24372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (24382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (24392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (24402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (24412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (24422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (24422) QueueExample: Receiver received: 20[0m
+[0;32mI (24432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (24442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (24452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (24462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (24522) QueueExample: Receiver received: 30[0m
+[0;32mI (24622) QueueExample: Receiver received: 40[0m
+[0;32mI (24722) QueueExample: Receiver received: 50[0m
+[0;32mI (24822) QueueExample: Receiver received: 60[0m
+[0;32mI (24922) QueueExample: Receiver received: 70[0m
+[0;32mI (25022) QueueExample: Receiver received: 80[0m
+[0;32mI (25122) QueueExample: Receiver received: 90[0m
+[0;32mI (25222) QueueExample: Receiver received: 100[0m
+[0;32mI (25322) QueueExample: Receiver received: 110[0m
+[0;32mI (25422) QueueExample: Receiver received: 120[0m
+[0;32mI (25522) QueueExample: Receiver received: 130[0m
+[0;32mI (25622) QueueExample: Receiver received: 140[0m
+[0;32mI (25722) QueueExample: Receiver received: 150[0m
+[0;32mI (26322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (26322) QueueExample: Receiver received: 10[0m
+[0;32mI (26332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (26342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (26352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (26362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (26372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (26382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (26392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (26402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (26412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (26422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (26422) QueueExample: Receiver received: 20[0m
+[0;32mI (26432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (26442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (26452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (26462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (26522) QueueExample: Receiver received: 30[0m
+[0;32mI (26622) QueueExample: Receiver received: 40[0m
+[0;32mI (26722) QueueExample: Receiver received: 50[0m
+[0;32mI (26822) QueueExample: Receiver received: 60[0m
+[0;32mI (26922) QueueExample: Receiver received: 70[0m
+[0;32mI (27022) QueueExample: Receiver received: 80[0m
+[0;32mI (27122) QueueExample: Receiver received: 90[0m
+[0;32mI (27222) QueueExample: Receiver received: 100[0m
+[0;32mI (27322) QueueExample: Receiver received: 110[0m
+[0;32mI (27422) QueueExample: Receiver received: 120[0m
+[0;32mI (27522) QueueExample: Receiver received: 130[0m
+[0;32mI (27622) QueueExample: Receiver received: 140[0m
+[0;32mI (27722) QueueExample: Receiver received: 150[0m
+[0;32mI (28322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (28322) QueueExample: Receiver received: 10[0m
+[0;32mI (28332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (28342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (28352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (28362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (28372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (28382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (28392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (28402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (28412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (28422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (28422) QueueExample: Receiver received: 20[0m
+[0;32mI (28432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (28442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (28452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (28462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (28522) QueueExample: Receiver received: 30[0m
+[0;32mI (28622) QueueExample: Receiver received: 40[0m
+[0;32mI (28722) QueueExample: Receiver received: 50[0m
+[0;32mI (28822) QueueExample: Receiver received: 60[0m
+[0;32mI (28922) QueueExample: Receiver received: 70[0m
+[0;32mI (29022) QueueExample: Receiver received: 80[0m
+[0;32mI (29122) QueueExample: Receiver received: 90[0m
+[0;32mI (29222) QueueExample: Receiver received: 100[0m
+[0;32mI (29322) QueueExample: Receiver received: 110[0m
+[0;32mI (29422) QueueExample: Receiver received: 120[0m
+[0;32mI (29522) QueueExample: Receiver received: 130[0m
+[0;32mI (29622) QueueExample: Receiver received: 140[0m
+[0;32mI (29722) QueueExample: Receiver received: 150[0m
+[0;32mI (30322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (30322) QueueExample: Receiver received: 10[0m
+[0;32mI (30332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (30342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (30352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (30362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (30372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (30382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (30392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (30402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (30412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (30422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (30422) QueueExample: Receiver received: 20[0m
+[0;32mI (30432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (30442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (30452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (30462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (30522) QueueExample: Receiver received: 30[0m
+[0;32mI (30622) QueueExample: Receiver received: 40[0m
+[0;32mI (30722) QueueExample: Receiver received: 50[0m
+[0;32mI (30822) QueueExample: Receiver received: 60[0m
+[0;32mI (30922) QueueExample: Receiver received: 70[0m
+[0;32mI (31022) QueueExample: Receiver received: 80[0m
+[0;32mI (31122) QueueExample: Receiver received: 90[0m
+[0;32mI (31222) QueueExample: Receiver received: 100[0m
+[0;32mI (31322) QueueExample: Receiver received: 110[0m
+[0;32mI (31422) QueueExample: Receiver received: 120[0m
+[0;32mI (31522) QueueExample: Receiver received: 130[0m
+[0;32mI (31622) QueueExample: Receiver received: 140[0m
+[0;32mI (31722) QueueExample: Receiver received: 150[0m
+[0;32mI (32322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (32322) QueueExample: Receiver received: 10[0m
+[0;32mI (32332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (32342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (32352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (32362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (32372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (32382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (32392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (32402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (32412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (32422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (32422) QueueExample: Receiver received: 20[0m
+[0;32mI (32432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (32442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (32452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (32462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (32522) QueueExample: Receiver received: 30[0m
+[0;32mI (32622) QueueExample: Receiver received: 40[0m
+[0;32mI (32722) QueueExample: Receiver received: 50[0m
+[0;32mI (32822) QueueExample: Receiver received: 60[0m
+[0;32mI (32922) QueueExample: Receiver received: 70[0m
+[0;32mI (33022) QueueExample: Receiver received: 80[0m
+[0;32mI (33122) QueueExample: Receiver received: 90[0m
+[0;32mI (33222) QueueExample: Receiver received: 100[0m
+[0;32mI (33322) QueueExample: Receiver received: 110[0m
+[0;32mI (33422) QueueExample: Receiver received: 120[0m
+[0;32mI (33522) QueueExample: Receiver received: 130[0m
+[0;32mI (33622) QueueExample: Receiver received: 140[0m
+[0;32mI (33722) QueueExample: Receiver received: 150[0m
+[0;32mI (34322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (34322) QueueExample: Receiver received: 10[0m
+[0;32mI (34332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (34342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (34352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (34362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (34372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (34382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (34392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (34402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (34412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (34422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (34422) QueueExample: Receiver received: 20[0m
+[0;32mI (34432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (34442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (34452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (34462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (34522) QueueExample: Receiver received: 30[0m
+[0;32mI (34622) QueueExample: Receiver received: 40[0m
+[0;32mI (34722) QueueExample: Receiver received: 50[0m
+[0;32mI (34822) QueueExample: Receiver received: 60[0m
+[0;32mI (34922) QueueExample: Receiver received: 70[0m
+[0;32mI (35022) QueueExample: Receiver received: 80[0m
+[0;32mI (35122) QueueExample: Receiver received: 90[0m
+[0;32mI (35222) QueueExample: Receiver received: 100[0m
+[0;32mI (35322) QueueExample: Receiver received: 110[0m
+[0;32mI (35422) QueueExample: Receiver received: 120[0m
+[0;32mI (35522) QueueExample: Receiver received: 130[0m
+[0;32mI (35622) QueueExample: Receiver received: 140[0m
+[0;32mI (35722) QueueExample: Receiver received: 150[0m
+[0;32mI (36322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (36322) QueueExample: Receiver received: 10[0m
+[0;32mI (36332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (36342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (36352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (36362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (36372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (36382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (36392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (36402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (36412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (36422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (36422) QueueExample: Receiver received: 20[0m
+[0;32mI (36432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (36442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (36452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (36462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (36522) QueueExample: Receiver received: 30[0m
+[0;32mI (36622) QueueExample: Receiver received: 40[0m
+[0;32mI (36722) QueueExample: Receiver received: 50[0m
+[0;32mI (36822) QueueExample: Receiver received: 60[0m
+[0;32mI (36922) QueueExample: Receiver received: 70[0m
+[0;32mI (37022) QueueExample: Receiver received: 80[0m
+[0;32mI (37122) QueueExample: Receiver received: 90[0m
+[0;32mI (37222) QueueExample: Receiver received: 100[0m
+[0;32mI (37322) QueueExample: Receiver received: 110[0m
+[0;32mI (37422) QueueExample: Receiver received: 120[0m
+[0;32mI (37522) QueueExample: Receiver received: 130[0m
+[0;32mI (37622) QueueExample: Receiver received: 140[0m
+[0;32mI (37722) QueueExample: Receiver received: 150[0m
+[0;32mI (38322) QueueExample: Sender Task 1 sent: 10[0m
+[0;32mI (38322) QueueExample: Receiver received: 10[0m
+[0;32mI (38332) QueueExample: Sender Task 2 sent: 20[0m
+[0;32mI (38342) QueueExample: Sender Task 3 sent: 30[0m
+[0;32mI (38352) QueueExample: Sender Task 4 sent: 40[0m
+[0;32mI (38362) QueueExample: Sender Task 5 sent: 50[0m
+[0;32mI (38372) QueueExample: Sender Task 6 sent: 60[0m
+[0;32mI (38382) QueueExample: Sender Task 7 sent: 70[0m
+[0;32mI (38392) QueueExample: Sender Task 8 sent: 80[0m
+[0;32mI (38402) QueueExample: Sender Task 9 sent: 90[0m
+[0;32mI (38412) QueueExample: Sender Task 10 sent: 100[0m
+[0;32mI (38422) QueueExample: Sender Task 11 sent: 110[0m
+[0;32mI (38422) QueueExample: Receiver received: 20[0m
+[0;32mI (38432) QueueExample: Sender Task 12 sent: 120[0m
+[0;32mI (38442) QueueExample: Sender Task 13 sent: 130[0m
+[0;32mI (38452) QueueExample: Sender Task 14 sent: 140[0m
+[0;32mI (38462) QueueExample: Sender Task 15 sent: 150[0m
+[0;32mI (38522) QueueExample: Receiver received: 30[0m
+[0;32mI (38622) QueueExample: Receiver received: 40[0m
+[0;32mI (38722) QueueExample: Receiver received: 50[0m
+[0;32mI (38822) QueueExample: Receiver received: 60[0m
+[0;32mI (38922) QueueExample: Receiver received: 70[0m
+[0;32mI (39022) QueueExample: Receiver received: 80[0m
+[0;32mI (39122) QueueExample: Receiver received: 90[0m
+[0;32mI (39222) QueueExample: Receiver received: 100[0m
+[0;32mI (39322) QueueExample: Receiver received: 110[0m
+[0;32mI (39422) QueueExample: Receiver received: 120[0m
+[0;32mI (39522) QueueExample: Receiver received: 130[0m
+[0;32mI (39622) QueueExample: Receiver received: 140[0m
+[0;32mI (39722) QueueExample: Receiver received: 150[0m

@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "ESP-IDF",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/dnk120/esp/esp-idf-release-v5.3/components/**"
+            ],
+            "defines": [],
+            "compilerPath": "/home/dnk120/esp/esp-idf-release-v5.3/tools/**",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

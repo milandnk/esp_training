@@ -1,0 +1,8 @@
+[0/1] Re-running CMake...
+-- git describe returned 'fatal: bad revision 'HEAD''
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Configuring incomplete, errors occurred!
+See also "/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/cbor_to_str/build/CMakeFiles/CMakeOutput.log".
+FAILED: build.ninja 
+/home/dnk120/.espressif/tools/cmake/3.24.0/bin/cmake --regenerate-during-build -S"/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/cbor_to_str" -B"/home/dnk120/Desktop/milan/trainning/esp32/esp trainning/cbor_to_str/build"

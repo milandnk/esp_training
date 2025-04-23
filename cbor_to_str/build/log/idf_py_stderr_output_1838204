@@ -1,0 +1,11 @@
+CMake Error at /home/dnk120/esp/esp-idf-release-v5.3/tools/cmake/build.cmake:298 (message):
+  Failed to resolve component 'libcbor' required by component 'main': unknown
+  name.
+Call Stack (most recent call first):
+  /home/dnk120/esp/esp-idf-release-v5.3/tools/cmake/build.cmake:341 (__build_resolve_and_add_req)
+  /home/dnk120/esp/esp-idf-release-v5.3/tools/cmake/build.cmake:644 (__build_expand_requirements)
+  /home/dnk120/esp/esp-idf-release-v5.3/tools/cmake/project.cmake:710 (idf_build_process)
+  CMakeLists.txt:6 (project)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

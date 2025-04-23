@@ -1,0 +1,26 @@
+{
+    "idf.port": "/dev/ttyUSB0",
+    "idf.adapterTargetName": "esp32s3",
+    "idf.openOcdConfigs": [
+        "interface/ftdi/esp32_devkitj_v1.cfg",
+        "target/esp32s3.cfg"
+    ],
+    "idf.flashType": "UART",
+    "files.associations": {
+        "stdint.h": "c",
+        "stdio.h": "c",
+        "lps22hb.h": "c",
+        "esp_log.h": "c",
+        "freertos.h": "c",
+        "i2c.h": "c",
+        "esp_err.h": "c",
+        "sht21.h": "c",
+        "gpio.h": "c",
+        "string.h": "c",
+        "spi_master.h": "c",
+        "spi_types.h": "c",
+        "ledc.h": "c",
+        "timer.h": "c",
+        "gptimer.h": "c"
+    }
+}

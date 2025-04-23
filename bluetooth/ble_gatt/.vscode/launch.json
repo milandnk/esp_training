@@ -1,0 +1,72 @@
+// {
+//     // Use IntelliSense to learn about possible attributes.
+//     // Hover to view descriptions of existing attributes.
+//     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "(gdb) Launch",
+//             "type": "cppdbg",
+//             "request": "launch",
+//             "program": "enter program name, for example ${workspaceFolder}/rotary_encoder",
+//             "args": [],
+//             "stopAtEntry": false,
+//             "cwd": "${fileDirname}",
+//             "environment": [],
+//             "externalConsole": false,
+//             "MIMode": "gdb",
+//             "setupCommands": [
+//                 {
+//                     "description": "Enable pretty-printing for gdb",
+//                     "text": "-enable-pretty-printing",
+//                     "ignoreFailures": true
+//                 },
+//                 {
+//                     "description": "Set Disassembly Flavor to Intel",
+//                     "text": "-gdb-set disassembly-flavor intel",
+//                     "ignoreFailures": true
+//                 }
+//             ]
+//         }
+//     ]
+// }
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ESP32 OpenOCD Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/your_project_name.elf", // Update with your ELF file path
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}", // Set working directory to your project folder
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            // Add these fields for OpenOCD configuration
+            "preLaunchTask": "", // If you have a build task, specify it here
+            "postDebugTask": "", // Specify any tasks to run after debugging if needed
+            "debugServerPath": "/usr/bin/openocd", // Path to OpenOCD executable
+            "debugServerArgs": "-f interface/ftdi/esp32_devkitj_v1.cfg -f target/esp32.cfg", // Adjust as per your setup
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bListening on port\\b"
+            },
+            "serverLaunchTimeout": 10000, // Timeout for server launch in milliseconds
+            "stopAtConnect": false // Set to true if you want to stop at connect
+        }
+    ]
+}
